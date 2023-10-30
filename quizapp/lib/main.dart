@@ -5,7 +5,6 @@ void main(){
   runApp (const Myapp());
 }
 
-
 class Myapp extends StatelessWidget {
   const Myapp({super.key});
 
@@ -13,7 +12,7 @@ class Myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
      debugShowCheckedModeBanner: false,
-     home: HomePage(),
+     home: const HomePage(),
      theme: ThemeData(
       primaryColor:Colors.deepPurpleAccent,
 

@@ -42,18 +42,18 @@ class _HomePageState extends State<HomePage> {
                 const SizedBox(height: 12),
                    normaltext(text: 'Welcome to test',size: 25,color: Colors.white),
                    headingtext(text: 'QuizApp',size: 30,color: Colors.white),
-                   SizedBox(height: 12),
+                   const SizedBox(height: 12),
                    subtitletext(text: 'You will be faced with one of the most demanding tests at any point in your career, so prepare yourself as much as possible',color: Colors.white,size: 15),
-                   Spacer(),
+                   const Spacer(),
                 Padding(
                   padding: const EdgeInsets.only(top: 20),
                   child: GestureDetector(
                     onTap: () {
-                      Navigator.push(context,MaterialPageRoute(builder: (context)=>Quiz_screen()));
+                      Navigator.push(context,MaterialPageRoute(builder: (context)=>const Quiz_screen()));
                     },
                     child: Container(
                       decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),
-                      boxShadow:[BoxShadow(
+                      boxShadow:const [BoxShadow(
                         color: Colors.white,
                         blurRadius:52,
                         blurStyle: BlurStyle.solid,
@@ -62,12 +62,9 @@ class _HomePageState extends State<HomePage> {
                       child: normaltext(text: 'Continue',color: Colors.black,size:25),
                     ),
                   ),
-                )
-           
+                ),
             ],
-  
           ),
-          
           ),
         ),
       );
