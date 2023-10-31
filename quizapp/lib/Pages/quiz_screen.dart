@@ -1,3 +1,5 @@
+import 'dart:js_util';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quizapp/Custom_widgets/api_service.dart';
@@ -15,10 +17,14 @@ class _Quiz_screenState extends State<Quiz_screen> {
 
   int seconds=60;
   late Future quiz;
+  var currentquestionindex=0;
+  var isLoaded=false;
+  var options=[];
 
-  void initstate(){
+  @override
+  void initState(){
     super.initState();
-    quiz=getquiz();
+    quiz=getQuiz();
   }
 
   @override
@@ -42,8 +48,18 @@ class _Quiz_screenState extends State<Quiz_screen> {
               future: quiz,
               builder: (BuildContext context,AsyncSnapshot snapshot) {
                 if (snapshot.hasData){
+                  var data=snapshot.data("results");
+
+                  if (isLoaded==false){
+                    options = data[currentquestionindex]["incorrect_answer"];
+                    options.add(data[currentquestionindex]["correct_answer"]);              
+                    options.shuffle();
+                    isLoaded = true;
+                  }
+
                   return SingleChildScrollView(
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -78,7 +94,6 @@ class _Quiz_screenState extends State<Quiz_screen> {
                       color: Colors.white,
                     ) ,),
                     const SizedBox(height: 18),
-                    const Spacer(),
                     ListView.builder(
                       shrinkWrap: true,
                       itemCount: 4,
