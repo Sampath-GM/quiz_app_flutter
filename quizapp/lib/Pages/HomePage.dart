@@ -25,7 +25,7 @@ class _HomePageState extends State<HomePage> {
             gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
-              colors:[ Colors.blue,Colors.blueAccent]
+              colors:[ Colors.lightBlue,Colors.blueAccent]
               ),
           ),
           child:  Column(
@@ -37,6 +37,7 @@ class _HomePageState extends State<HomePage> {
                 },
                icon:const Icon(
                 CupertinoIcons.xmark_circle,
+                color: Colors.white60,
                 size: 50,)),
                 Image.asset('assets/images/quiz.png'),
                 const SizedBox(height: 12),

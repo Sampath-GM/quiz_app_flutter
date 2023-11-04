@@ -33,14 +33,11 @@ class _Quiz_screenState extends State<Quiz_screen> {
     quiz=getQuiz();
   }
 
-  resetcolor(){
-    var optionscolor=[
-    Colors.white,
-     Colors.white,
-      Colors.white,
-       Colors.white,
-  ];
+void resetColors() {
+  for (int i = 0; i < optionscolor.length; i++) {
+    optionscolor[i] = Colors.white;
   }
+}
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -85,29 +82,31 @@ class _Quiz_screenState extends State<Quiz_screen> {
                             },
                            icon:const Icon(
                             CupertinoIcons.xmark_circle,
+                            color: Colors.white70,
                             size: 50),
                                   ),
                       ],              
                   ),
                   const SizedBox(height: 12,),
                   Image.asset('assets/images/idea.png',
-                  height: 200,width: 200,),
-                   const SizedBox(height: 12,),
+                  height: 250,width: 250,),
+                   const SizedBox(height: 8,),
                    Align(
                       alignment: Alignment.centerLeft,
                       child: normaltext(
               color: Colors.white,
-              size: 22,
+              size: 26,
               text: 'Questions ${currentquestionindex + 1} of ${data.length}'),
               ),
-                  const SizedBox(height: 12,),
+                  const SizedBox(height: 16,),
                         Text(data[currentquestionindex]["question"],
+                        
                     textAlign: TextAlign.center,
                     style:const TextStyle(
-                      fontSize: 19,
+                      fontSize: 24,
                       color: Colors.white,
                     ) ,),
-                    const SizedBox(height: 18),
+                    const SizedBox(height: 20),
                     ListView.builder(
                       shrinkWrap: true,
                       itemCount: options.length,
@@ -123,15 +122,15 @@ class _Quiz_screenState extends State<Quiz_screen> {
                               else{
                                 optionscolor[index]=Colors.red;
                             }
-                            
-                              if(currentquestionindex<data.length){
-                                Future.delayed(Duration(seconds: 1),(){
-                                  isLoaded=false;
+                              if(currentquestionindex < data.length){
+                                Future.delayed(const Duration(seconds: 1),(){
+                                 setState(() {
+                                     isLoaded=false;
                                 currentquestionindex++;
-                                  resetcolor();
+                                 resetColors();
+                                 });
                               });
                               }
-                              
                             });
                           },
                           child: Container(

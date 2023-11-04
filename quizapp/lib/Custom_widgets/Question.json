@@ -1,54 +1,54 @@
 {
-"results":[
-    {
-        "question": "What is the capital of France?",
-        "correct_answer": "Rome",
-        "incorrect_answer":["London","Paris","Berlin"]
-    },
-    {
-        "question": "What is the largest planet in our solar system?",
-        "correct_answer": "Saturn",
-        "incorrect_answer":["Mars", "Venus", "Jupiter"]
-    },
-    {
-        "question": "Who wrote the play 'Romeo and Juliet'?",
-        "correct_answer": "Jane Austen",
-        "incorrect_answer":["Charles Dickens", "Mark Twain","William Shakespeare"]
-    },
-    {
-        "question": "Who wrote the play 'Romeo and Juliet'?",
-        "correct_answer": "Jane Austen",
-        "incorrect_answer":["Charles Dickens", "Mark Twain","William Shakespeare"]
-    },
-    {
-        "question": "Who wrote the play 'Romeo and Juliet'?",
-        "correct_answer": "Jane Austen",
-        "incorrect_answer":["Charles Dickens", "Mark Twain","William Shakespeare"]
-    },
-    {
-        "question": "Who wrote the play 'Romeo and Juliet'?",
-        "correct_answer": "Jane Austen",
-        "incorrect_answer":["Charles Dickens", "Mark Twain","William Shakespeare"]
-    },
-    {
-        "question": "Who wrote the play 'Romeo and Juliet'?",
-        "correct_answer": "Jane Austen",
-        "incorrect_answer":["Charles Dickens", "Mark Twain","William Shakespeare"]
-    },
-    {
-        "question": "Who wrote the play 'Romeo and Juliet'?",
-        "correct_answer": "Jane Austen",
-        "incorrect_answer":["Charles Dickens", "Mark Twain","William Shakespeare"]
-    },
-    {
-        "question": "Who wrote the play 'Romeo and Juliet'?",
-        "correct_answer": "Jane Austen",
-        "incorrect_answer":["Charles Dickens", "Mark Twain","William Shakespeare"]
-    },
-    {
-        "question": "Who wrote the play 'Romeo and Juliet'?",
-        "correct_answer": "Jane Austen",
-        "incorrect_answer":["Charles Dickens", "Mark Twain","William Shakespeare"]
-    }
-]
+    "results": [
+        {
+            "question": "What is Flutter?",
+            "correct_answer": "Framework",
+            "incorrect_answer": ["Language", "DBMS", "Engine"]
+        },
+        {
+            "question": "Language used in Flutter?",
+            "correct_answer": "Dart",
+            "incorrect_answer": ["Java", "Swift", "Python"]
+        },
+        {
+            "question": "Company behind Flutter?",
+            "correct_answer": "Google",
+            "incorrect_answer": ["Facebook", "Microsoft", "Apple"]
+        },
+        {
+            "question": "Platforms for Flutter?",
+            "correct_answer": "Both",
+            "incorrect_answer": ["Android", "iOS", "Windows"]
+        },
+        {
+            "question": "Purpose of 'Hot Reload'?",
+            "correct_answer": "Live code testing",
+            "incorrect_answer": ["Updates", "Network optimization", "Compilation"]
+        },
+        {
+            "question": "What is a 'Widget'?",
+            "correct_answer": "UI element",
+            "incorrect_answer": ["Language", "Mark Twain", "William Shakespeare"]
+        },
+        {
+            "question": "IDEs for Flutter?",
+            "correct_answer": "All",
+            "incorrect_answer": ["VS Code", "Android Studio", "Xcode"]
+        },
+        {
+            "question": "Package manager in Flutter?",
+            "correct_answer": "Pub",
+            "incorrect_answer": ["npm", "Gradle", "Cocoapods"]
+        },
+        {
+            "question": "Main advantage of Flutter for cross-platform development?",
+            "correct_answer": "Speed",
+            "incorrect_answer": ["Performance", "Native APIs", "Security"]
+        },
+        {
+            "question": "What is Flutter's widget tree?",
+            "correct_answer": "UI representation",
+            "incorrect_answer": ["Data structure", "Protocol", "Animation type"]
+        }
+    ]
 }
